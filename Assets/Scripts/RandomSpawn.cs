@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RandomSpawn : MonoBehaviour
 {
+    #region Variable Declaration
 
     public GameObject myEnemyPrefab;
     public List<GameObject> myEnemyList;
@@ -18,6 +19,8 @@ public class RandomSpawn : MonoBehaviour
 
     Vector3 spawnOrigin;
     Vector3 spawnPoint;
+
+    #endregion
 
 
     // Start is called before the first frame update
@@ -50,11 +53,17 @@ public class RandomSpawn : MonoBehaviour
         myEnemyList = staticEnemyList;
     }
 
+    #region Public Object Destruction Method
+
     public static void DestroyObjectInList(GameObject destroyedPrefab)
     {
         Destroy(destroyedPrefab);
         staticEnemyList.Remove(destroyedPrefab);
     }
+
+    #endregion
+
+    #region Public Visibility Methods
 
     public static void VisibleHurtboxes()
     {
@@ -77,4 +86,6 @@ public class RandomSpawn : MonoBehaviour
         }
         Debug.Log("Enabling Bodies!");
     }
+
+    #endregion
 }

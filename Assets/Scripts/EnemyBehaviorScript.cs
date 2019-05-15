@@ -5,11 +5,16 @@ using System;
 
 public class EnemyBehaviorScript : MonoBehaviour
 {
+    #region Variable Declaration
+
     float myRandTimer;
     float randX;
     float randZ;
     System.Random myRandom = new System.Random(Seed: System.DateTime.Now.Millisecond);
     Vector3 newPosition;
+
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
