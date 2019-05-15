@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 2297184347176272580}
   - component: {fileID: 2297184347176272581}
   - component: {fileID: 2297184347176272577}
+  - component: {fileID: 4967542051474647667}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: EnemyBody
@@ -201,3 +202,15 @@ MonoBehaviour:
   enemyHurtbox: {fileID: 2297184346979419231}
   randX: 0
   randZ: 0
+--- !u!114 &4967542051474647667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2297184347176272586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9e2afec3a9b9d42a07e2e47f2f2492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
